@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Observable, of, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { ContactSelectionServiceService } from '../contact-selection-service.service';
 import { IFullContactDetails } from '../fullContactDetails';
 

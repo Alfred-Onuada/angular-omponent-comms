@@ -38,12 +38,12 @@ export class ContactsListComponent {
   ]
 
   matchingContacts: IContact[] = [];
-
-  @Output() selectionEvent = new EventEmitter<IContact>();
-
+  
   filterContacts(): void {
     this.matchingContacts = this.allContacts.filter(contact => contact.gender === this._gender);
   }
+  
+  @Output() selectionEvent = new EventEmitter<IContact>();
 
   selectContact(index: number): void {
     let contact = this.matchingContacts[index];
